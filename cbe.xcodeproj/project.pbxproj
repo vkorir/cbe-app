@@ -18,6 +18,7 @@
 		579B63FF1F41298700E1AC61 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579B63FE1F41298700E1AC61 /* User.swift */; };
 		579B64011F412AC300E1AC61 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579B64001F412AC300E1AC61 /* Report.swift */; };
 		579B64031F4153E500E1AC61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579B64021F4153E500E1AC61 /* CoreLocation.framework */; };
+		57D55D141FC0E10D0010C4FE /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D55D131FC0E10D0010C4FE /* SearchResultsController.swift */; };
 		57DF7B421F2ED256003805B7 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF7B411F2ED256003805B7 /* FormViewController.swift */; };
 		57DF7B441F2EDCC3003805B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DF7B431F2EDCC3003805B7 /* Assets.xcassets */; };
 		57DF7B461F2EDE1D003805B7 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DF7B451F2EDE1D003805B7 /* SidebarViewController.swift */; };
@@ -42,6 +43,7 @@
 		579B63FE1F41298700E1AC61 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		579B64001F412AC300E1AC61 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		579B64021F4153E500E1AC61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		57D55D131FC0E10D0010C4FE /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResultsController.swift; path = ../../../../../../Victor/Files/Developer/CBE/iOS/cbe/SearchResultsController.swift; sourceTree = "<group>"; };
 		57DF7B411F2ED256003805B7 /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		57DF7B431F2EDCC3003805B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57DF7B451F2EDE1D003805B7 /* SidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		577B82B41F18964400B3B3C9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				57D55D131FC0E10D0010C4FE /* SearchResultsController.swift */,
 				57DF7B411F2ED256003805B7 /* FormViewController.swift */,
 				577B82A01F18948700B3B3C9 /* MainViewController.swift */,
 				57DF7B451F2EDE1D003805B7 /* SidebarViewController.swift */,
@@ -308,6 +311,7 @@
 				57DF7B481F2F0FF8003805B7 /* BorderView.swift in Sources */,
 				577B829F1F18948700B3B3C9 /* AppDelegate.swift in Sources */,
 				577B82B61F18968B00B3B3C9 /* Constants.swift in Sources */,
+				57D55D141FC0E10D0010C4FE /* SearchResultsController.swift in Sources */,
 				57DF7B461F2EDE1D003805B7 /* SidebarViewController.swift in Sources */,
 				579B63FF1F41298700E1AC61 /* User.swift in Sources */,
 				579B64011F412AC300E1AC61 /* Report.swift in Sources */,

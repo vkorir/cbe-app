@@ -7,19 +7,20 @@
 //
 
 import Foundation
+import GoogleMaps
 
 class Report {
     var id: String                      // uid of the user who posted
-    var location: [String: Double]      // location of the post
     var time: Date                      // The date that the report was submitted
     var see: [AnyObject]
     var smell: [AnyObject]
     var hear: [AnyObject]
     var feel: [AnyObject]
+    var lat: Double
+    var lng: Double
     
     init(id: String, location: [String: Double], timeString: String, see: [AnyObject], smell: [AnyObject], hear: [AnyObject], feel: [AnyObject]) {
         self.id = id
-        self.location = location
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = Config.dateFormat
         self.time = dateFormatter.date(from: timeString)!
@@ -27,6 +28,22 @@ class Report {
         self.smell = smell
         self.hear = hear
         self.feel = feel
+        self.lat = location[Path.lat]!
+        self.lng = location[Path.lng]!
+    }
+    
+    //  MARK
+    func reverseGeocodeCoordinate() -> String {
+        let coordinate: CLLocation = CLLocation(latitude: lat, longitude: lng)
+        let geocoder = GMSGeocoder()
+        var description: String = String()
+        geocoder.reverseGeocodeCoordinate(coordinate.coordinate) { response, error in
+            if let address = response?.firstResult() {
+                let lines = address.lines as! [String]
+                description = lines.joined(separator: "\n")
+            }
+        }
+        return description
     }
     
     func getValue() -> Int {
@@ -35,5 +52,13 @@ class Report {
         let hear = self.hear[1] as! Int
         let feel = self.feel[1] as! Int
         return Int((see + smell + hear + feel) / 4)
+    }
+    
+    func getLat() -> Double {
+        return lat
+    }
+    
+    func getLng() -> Double {
+        return lng
     }
 }

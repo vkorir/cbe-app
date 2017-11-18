@@ -8,10 +8,11 @@
 
 import UIKit
 import GoogleMaps
+import GooglePlaces
 import FirebaseDatabase
 import FirebaseAuth
 
-class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
+class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate, UISearchBarDelegate, ReturnAddress, GMSAutocompleteFetcherDelegate {
     let lat = 37.804363
     let lng = -122.271111
     let manager = CLLocationManager()
@@ -26,6 +27,12 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     var iHearIntensity: Int = 0
     var iFeelIntensity: Int = 0
     
+    var searchResultsController: SearchResultsController!
+    var resultsArray = [String]()
+    var gmsFetcher: GMSAutocompleteFetcher!
+    
+    @IBOutlet weak var searchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.delegate = self
@@ -36,7 +43,38 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         longitude = manager.location?.coordinate.longitude
     }
     
-//    FORM BUTTON ACTIONS
+    override func viewDidAppear(_ animated: Bool) {
+        searchResultsController = SearchResultsController()
+        searchResultsController.delegate = self
+        gmsFetcher = GMSAutocompleteFetcher()
+        gmsFetcher.delegate = self
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.resultsArray.removeAll()
+        gmsFetcher.sourceTextHasChanged(searchText)
+    }
+    
+    public func didFailAutocompleteWithError(_ error: Error) {
+        print(error.localizedDescription)
+    }
+    
+    public func didAutocomplete(with predictions: [GMSAutocompletePrediction]) {
+        for prediction in predictions {
+            if let prediction = prediction as GMSAutocompletePrediction!{
+                self.resultsArray.append(prediction.attributedFullText.string)
+            }
+        }
+        self.searchResultsController.reloadDataWithArray(self.resultsArray)
+    }
+    
+    func returnedAddress(lng: Double, lat: Double, address: String) {
+        longitude = lng
+        latitude = lat
+        searchButton.titleLabel?.text = address
+    }
+    
+    //  FORM BUTTON ACTIONS
     
     @IBAction func iSeeDidSelect(_ sender: UIButton) {
         iSee = "I See " + Descriptions.see[sender.tag]
@@ -72,6 +110,12 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     @IBAction func cancelDidTouch(_ sender: Any) {
         performSegue(withIdentifier: Ids.reportToMain, sender: nil)
+    }
+    
+    @IBAction func searchForLocation(_ sender: UIButton) {
+        let searchController = UISearchController(searchResultsController: searchResultsController)
+        searchController.searchBar.delegate = self
+        self.present(searchController, animated: true, completion: nil)
     }
     
     @IBAction func submitDidTouch(_ sender: Any) {

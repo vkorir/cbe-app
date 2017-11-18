@@ -49,16 +49,15 @@ class MainViewController: UIViewController, GMSMapViewDelegate {
                                 feel: dictionary[Path.feel] as! [AnyObject])
             self.reports.append(report)
             
-            let lat: Double = report.location[Path.lat]!
-            let lng: Double = report.location[Path.lng]!
-            let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: lat, longitude: lng))
-            marker.title = "I Smell/See/Hear/Feel"
-            marker.snippet = "latitude: \(lat) longitude: \(lng)"
-            marker.infoWindowAnchor = CGPoint(x: 0.5, y: 0.5)
-            marker.icon = GMSMarker.markerImage(with: UIColor.green)
-            marker.map = self.mapView
+            let lat: Double = report.lat
+            let lng: Double = report.lng
+            self.locateOnMapWith(lng: lng, lat: lat, title: report.reverseGeocodeCoordinate())
+//            let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+//            marker.title = report.reverseGeocodeCoordinate()
+//            print(report.reverseGeocodeCoordinate())
+//            marker.snippet = "latitude: \(lat) longitude: \(lng)"
         })
-        let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lng, zoom: 8)
+        let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lng, zoom: 10)
         mapView.camera = camera
         mapView.alpha = 1.0
         mapView.isMyLocationEnabled = true
@@ -71,6 +70,15 @@ class MainViewController: UIViewController, GMSMapViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func locateOnMapWith(lng: Double, lat: Double, title: String) {
+        let position = CLLocationCoordinate2DMake(lat, lng)
+        let marker = GMSMarker(position: position)
+        marker.title = title
+        marker.infoWindowAnchor = CGPoint(x: 0.5, y: 0.5)
+        marker.icon = GMSMarker.markerImage(with: UIColor.green)
+        marker.map = self.mapView
     }
 }
 
