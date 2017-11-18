@@ -44,8 +44,8 @@ class SignInViewController: UIViewController {
             // Check that user isn't nil
             if let user = user {
                 let uid = user.uid
-                let username = user.email
-                self.user = User(id: uid, username: username!)
+                let email = user.email
+                self.user = User(id: uid, username: email!)
                 self.addUser()
             } else {
                 // Error: check error and show message

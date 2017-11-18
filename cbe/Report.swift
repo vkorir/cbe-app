@@ -9,15 +9,15 @@
 import Foundation
 
 class Report {
-    var id: String                      // id of the poster
+    var id: String                      // uid of the user who posted
     var location: [String: Double]      // location of the post
     var time: Date                      // The date that the report was submitted
-    var see: [String: Int]
-    var smell: [String: Int]
-    var hear: [String: Int]
-    var feel: [String: Int]
+    var see: [AnyObject]
+    var smell: [AnyObject]
+    var hear: [AnyObject]
+    var feel: [AnyObject]
     
-    init(id: String, location: [String: Double], timeString: String, see: [String: Int], smell: [String: Int], hear: [String: Int], feel: [String: Int]) {
+    init(id: String, location: [String: Double], timeString: String, see: [AnyObject], smell: [AnyObject], hear: [AnyObject], feel: [AnyObject]) {
         self.id = id
         self.location = location
         let dateFormatter = DateFormatter()
@@ -27,5 +27,13 @@ class Report {
         self.smell = smell
         self.hear = hear
         self.feel = feel
+    }
+    
+    func getValue() -> Int {
+        let see = self.see[1] as! Int
+        let smell = self.smell[1] as! Int
+        let hear = self.hear[1] as! Int
+        let feel = self.feel[1] as! Int
+        return Int((see + smell + hear + feel) / 4)
     }
 }

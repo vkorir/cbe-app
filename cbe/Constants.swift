@@ -14,9 +14,12 @@ struct Config {
     static let dateFormat = "yyyy-MM-dd HH:mm:ss.A"
 }
 
-struct Color {
+struct Colors {
     static let primaryColor = UIColor(red: 0.22, green: 0.58, blue: 0.29, alpha: 1.0)
     static let secondaryColor = UIColor.lightGray
+    let markerColors = [UIColor.green,
+                        UIColor.red,
+                        UIColor.blue]
 }
 
 struct Ids {

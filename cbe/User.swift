@@ -15,8 +15,8 @@ class User {
     var name: String?
     var imagePath: String?
     
-    init(authData: user) {
-        self.id = user.id
-        self.username = user.username
+    init(id: String, username: String) {
+        self.id = id
+        self.username = username
     }
 }
