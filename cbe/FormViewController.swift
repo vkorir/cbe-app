@@ -26,6 +26,7 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     var iSmellIntensity: Int = 0
     var iHearIntensity: Int = 0
     var iFeelIntensity: Int = 0
+    var desc: String = String("UC Berkeley, Berkeley CA, United States")
     
     var searchResultsController: SearchResultsController!
     var resultsArray = [String]()
@@ -46,7 +47,10 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     override func viewDidAppear(_ animated: Bool) {
         searchResultsController = SearchResultsController()
         searchResultsController.delegate = self
-        gmsFetcher = GMSAutocompleteFetcher()
+        let filter = GMSAutocompleteFilter()
+        filter.type = .establishment
+        filter.country = "US"
+        gmsFetcher = GMSAutocompleteFetcher(bounds: nil, filter: filter)
         gmsFetcher.delegate = self
     }
     
@@ -71,7 +75,7 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     func returnedAddress(lng: Double, lat: Double, address: String) {
         longitude = lng
         latitude = lat
-        searchButton.titleLabel?.text = address
+        desc = address
     }
     
     //  FORM BUTTON ACTIONS
@@ -132,7 +136,8 @@ class FormViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
             Path.see: [iSee, iSeeIntensity] as AnyObject,
             Path.smell: [iSmell, iSmellIntensity] as AnyObject,
             Path.hear: [iHear, iHearIntensity] as AnyObject,
-            Path.feel: [iFeel, iFeelIntensity] as AnyObject
+            Path.feel: [iFeel, iFeelIntensity] as AnyObject,
+            Path.description: desc as AnyObject
         ]
         postRef.setValue(data)
         

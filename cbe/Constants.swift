@@ -95,4 +95,5 @@ struct Path {
     static let feel = "feel"
     static let intensity = "intensity"
     static let imagePath = "imagePath"
+    static let description = "description"
 }

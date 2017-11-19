@@ -286,14 +286,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yr-hm-2TM">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="holder" translatesAutoresizingMaskIntoConstraints="NO" id="icE-3S-8Ku">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="icE-3S-8Ku">
                                         <rect key="frame" x="20" y="35.666666666666657" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="c0l-F9-eAC"/>
                                             <constraint firstAttribute="height" constant="100" id="oiz-sr-flM"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Communities for a Better" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI0-Yz-OfJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myVoice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI0-Yz-OfJ">
                                         <rect key="frame" x="130" y="64.666666666666671" width="284" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="g8b-uf-jIB"/>
@@ -302,7 +302,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOR-kh-FJF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOR-kh-FJF">
                                         <rect key="frame" x="130" y="85.666666666666671" width="284" height="20"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -480,37 +480,18 @@
                                 <rect key="frame" x="0.0" y="84" width="414" height="652"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJz-fi-rj9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="967"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="967.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-iZ-NQN" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="12" width="398" height="100"/>
+                                                <rect key="frame" x="8" y="12" width="398" height="100.33333333333333"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSB-Oh-Zv3" customClass="RoundButton" customModule="cbe" customModuleProvider="target">
-                                                        <rect key="frame" x="134" y="60" width="130" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="9ua-21-evP"/>
-                                                            <constraint firstAttribute="width" constant="130" id="W5a-tG-nve"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                                        <state key="normal" title="OR use GPS">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="2"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-6p-Xpk" customClass="RoundButton" customModule="cbe" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-6p-Xpk" customClass="RoundButton" customModule="cbe" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="20" width="378" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="LlA-0h-47b"/>
                                                         </constraints>
-                                                        <state key="normal" title="Tap to Search for Location">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <state key="normal" title=" Tap to Search for Location">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -520,22 +501,38 @@
                                                                 <real key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="searchForLocation:" destination="1fQ-m5-Izh" eventType="touchUpInside" id="Vfd-Vt-xBs"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="3Ig-D2-6Hz">
+                                                        <rect key="frame" x="358" y="20" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="CWT-CX-6Ue"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locations Use GPS by Default" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZt-Dc-LFm">
+                                                        <rect key="frame" x="0.0" y="65" width="388" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="3Ig-D2-6Hz" firstAttribute="top" secondItem="xJO-6p-Xpk" secondAttribute="top" id="1jm-ch-8vn"/>
+                                                    <constraint firstItem="gZt-Dc-LFm" firstAttribute="leading" secondItem="ztd-iZ-NQN" secondAttribute="leading" id="3XH-nH-33F"/>
                                                     <constraint firstItem="xJO-6p-Xpk" firstAttribute="top" secondItem="ztd-iZ-NQN" secondAttribute="top" constant="20" id="J1W-sP-Zs1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gZt-Dc-LFm" secondAttribute="bottom" constant="15" id="Mo9-oD-PUe"/>
                                                     <constraint firstAttribute="trailing" secondItem="xJO-6p-Xpk" secondAttribute="trailing" constant="10" id="cyb-av-ZVN"/>
-                                                    <constraint firstItem="mSB-Oh-Zv3" firstAttribute="top" secondItem="xJO-6p-Xpk" secondAttribute="bottom" constant="10" id="lcJ-nt-Qdp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gZt-Dc-LFm" secondAttribute="trailing" constant="10" id="ewf-Ik-EGR"/>
+                                                    <constraint firstItem="3Ig-D2-6Hz" firstAttribute="bottom" secondItem="xJO-6p-Xpk" secondAttribute="bottom" id="ih1-yw-xSA"/>
+                                                    <constraint firstItem="gZt-Dc-LFm" firstAttribute="top" secondItem="xJO-6p-Xpk" secondAttribute="bottom" constant="15" id="mOr-Od-rmD"/>
                                                     <constraint firstItem="xJO-6p-Xpk" firstAttribute="leading" secondItem="ztd-iZ-NQN" secondAttribute="leading" constant="10" id="p8t-rR-L4l"/>
-                                                    <constraint firstItem="mSB-Oh-Zv3" firstAttribute="centerX" secondItem="ztd-iZ-NQN" secondAttribute="centerX" id="riy-sz-EDq"/>
-                                                    <constraint firstAttribute="bottom" secondItem="mSB-Oh-Zv3" secondAttribute="bottom" constant="10" id="vIw-Gh-sip"/>
+                                                    <constraint firstItem="3Ig-D2-6Hz" firstAttribute="trailing" secondItem="xJO-6p-Xpk" secondAttribute="trailing" id="z01-X4-ZaP"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -550,7 +547,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgY-v5-IQC" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="136" width="398" height="77"/>
+                                                <rect key="frame" x="8" y="136.33333333333334" width="398" height="77"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsQ-Su-9FV" customClass="DLRadioButton">
                                                         <rect key="frame" x="84" y="15" width="30" height="30"/>
@@ -612,7 +609,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Very Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymE-GI-i6i">
-                                                        <rect key="frame" x="64" y="45" width="70" height="17"/>
+                                                        <rect key="frame" x="64" y="44.999999999999972" width="70" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="70" id="Em0-iX-9iE"/>
                                                         </constraints>
@@ -621,7 +618,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Very Strong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-JB-3Xj">
-                                                        <rect key="frame" x="259" y="45" width="80" height="17"/>
+                                                        <rect key="frame" x="259" y="44.999999999999972" width="80" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="ZHZ-E2-xX5"/>
                                                         </constraints>
@@ -689,7 +686,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3e-Rf-aek" customClass="CustomLabel" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="149.66666666666666" y="124" width="114.99999999999997" height="24"/>
+                                                <rect key="frame" x="149.66666666666666" y="124.33333333333334" width="114.99999999999997" height="24"/>
                                                 <color key="backgroundColor" red="0.8508874773979187" green="0.85103398561477661" blue="0.85087817907333374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="115" id="gK4-ov-W0P"/>
@@ -710,7 +707,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OJ-Kk-b5l" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="237" width="398" height="138"/>
+                                                <rect key="frame" x="8" y="237.33333333333331" width="398" height="138"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv8-jh-7TI" customClass="DLRadioButton">
                                                         <rect key="frame" x="10" y="15" width="30" height="30"/>
@@ -910,7 +907,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I See:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-4a-YrO" customClass="CustomLabel" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="225" width="70" height="24"/>
+                                                <rect key="frame" x="30" y="225.33333333333331" width="70" height="24"/>
                                                 <color key="backgroundColor" red="0.8142208456993103" green="0.87169766426086426" blue="0.82208532094955444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="Vtz-QW-WRk"/>
@@ -932,7 +929,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPR-oX-Y54" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="363" width="204" height="24"/>
+                                                <rect key="frame" x="192" y="363.33333333333331" width="204" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Its-rR-SUv" customClass="DLRadioButton">
                                                         <rect key="frame" x="32" y="2" width="20" height="20"/>
@@ -1047,7 +1044,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIo-Ay-TPe" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="399" width="398" height="212"/>
+                                                <rect key="frame" x="8" y="399.33333333333331" width="398" height="211.99999999999994"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsc-cg-LdD" customClass="DLRadioButton">
                                                         <rect key="frame" x="10" y="15" width="30" height="30"/>
@@ -1078,7 +1075,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qju-hP-PNX" customClass="DLRadioButton">
-                                                        <rect key="frame" x="10" y="53" width="30" height="30"/>
+                                                        <rect key="frame" x="10" y="53.000000000000057" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1093,7 +1090,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYI-tD-1KA" customClass="DLRadioButton">
-                                                        <rect key="frame" x="10" y="91" width="30" height="30"/>
+                                                        <rect key="frame" x="10" y="91.000000000000057" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1108,7 +1105,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0f-Ci-4NO" customClass="DLRadioButton">
-                                                        <rect key="frame" x="10" y="129" width="30" height="30"/>
+                                                        <rect key="frame" x="10" y="129.00000000000006" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1123,7 +1120,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-oL-CPQ" customClass="DLRadioButton">
-                                                        <rect key="frame" x="10" y="167" width="30" height="30"/>
+                                                        <rect key="frame" x="10" y="167.00000000000006" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1153,7 +1150,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGw-mC-5zI" customClass="DLRadioButton">
-                                                        <rect key="frame" x="184" y="53" width="30" height="30"/>
+                                                        <rect key="frame" x="184" y="53.000000000000057" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1168,7 +1165,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osp-5D-eAa" customClass="DLRadioButton">
-                                                        <rect key="frame" x="184" y="91" width="30" height="30"/>
+                                                        <rect key="frame" x="184" y="91.000000000000057" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1183,7 +1180,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kn-S6-kga" customClass="DLRadioButton">
-                                                        <rect key="frame" x="184" y="129" width="30" height="30"/>
+                                                        <rect key="frame" x="184" y="129.00000000000006" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1198,7 +1195,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogb-lW-Cat" customClass="DLRadioButton">
-                                                        <rect key="frame" x="184" y="166.66666666666663" width="30" height="30"/>
+                                                        <rect key="frame" x="184" y="166.66666666666669" width="30" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
@@ -1222,13 +1219,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCl-jh-kah">
-                                                        <rect key="frame" x="40" y="53" width="134" height="30"/>
+                                                        <rect key="frame" x="40" y="53.000000000000057" width="134" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burnt Tire/Plastic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-tR-3gp">
-                                                        <rect key="frame" x="214" y="53" width="174" height="30"/>
+                                                        <rect key="frame" x="214" y="53.000000000000057" width="174" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1243,37 +1240,37 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pollen/Tree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPN-4R-Ryb">
-                                                        <rect key="frame" x="40" y="91" width="134" height="30"/>
+                                                        <rect key="frame" x="40" y="91.000000000000057" width="134" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gasoline/Oil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-rR-Cz2">
-                                                        <rect key="frame" x="40" y="129" width="134" height="30"/>
+                                                        <rect key="frame" x="40" y="129.00000000000006" width="134" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotten Eggs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYa-Jl-pBD">
-                                                        <rect key="frame" x="40" y="167" width="134" height="30"/>
+                                                        <rect key="frame" x="40" y="167.00000000000006" width="134" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bakery/Bread" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGd-BJ-5xN">
-                                                        <rect key="frame" x="214" y="91" width="174" height="30"/>
+                                                        <rect key="frame" x="214" y="91.000000000000057" width="174" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diesel Exhaust" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7i-7u-5Dj">
-                                                        <rect key="frame" x="214" y="129" width="174" height="30"/>
+                                                        <rect key="frame" x="214" y="129.00000000000006" width="174" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None of the above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-Yv-DnQ">
-                                                        <rect key="frame" x="214" y="167" width="174" height="30"/>
+                                                        <rect key="frame" x="214" y="167.00000000000006" width="174" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                         <color key="textColor" red="0.5" green="0.3067237921" blue="0.067917893549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1372,7 +1369,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Smell:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-QF-kfO" customClass="CustomLabel" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="29.666666666666671" y="387" width="70" height="24"/>
+                                                <rect key="frame" x="29.666666666666671" y="387.33333333333331" width="70" height="24"/>
                                                 <color key="backgroundColor" red="0.9261968731880188" green="0.89855259656906128" blue="0.86489182710647583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1390,7 +1387,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQx-sx-rlL" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="601" width="204" height="24"/>
+                                                <rect key="frame" x="192" y="601.33333333333337" width="204" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQw-n5-Odb" customClass="DLRadioButton">
                                                         <rect key="frame" x="32.666666666666657" y="2" width="20" height="20"/>
@@ -1501,7 +1498,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-9K-qLa" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="635" width="398" height="98"/>
+                                                <rect key="frame" x="8" y="635.33333333333337" width="398" height="98"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiA-cC-1L5" customClass="DLRadioButton">
                                                         <rect key="frame" x="10" y="15" width="30" height="30"/>
@@ -1612,7 +1609,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Hear:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zg-qx-cba" customClass="CustomLabel" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="623" width="70" height="24"/>
+                                                <rect key="frame" x="30" y="623.33333333333337" width="70" height="24"/>
                                                 <color key="backgroundColor" red="0.884532630443573" green="0.94077503681182861" blue="0.97836285829544067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1630,7 +1627,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MW1-kN-DoC" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="723.66666666666663" width="204" height="24"/>
+                                                <rect key="frame" x="192" y="724" width="204" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSW-js-d37" customClass="DLRadioButton">
                                                         <rect key="frame" x="32" y="2" width="20" height="20"/>
@@ -1741,7 +1738,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37R-lF-GQ0" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="757" width="398" height="136"/>
+                                                <rect key="frame" x="8" y="757.33333333333337" width="398" height="136"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81c-KC-asb" customClass="DLRadioButton">
                                                         <rect key="frame" x="10" y="15" width="30" height="30"/>
@@ -1912,7 +1909,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Feel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuN-Fz-y9d" customClass="CustomLabel" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="745" width="70" height="24"/>
+                                                <rect key="frame" x="30" y="745.33333333333337" width="70" height="24"/>
                                                 <color key="backgroundColor" red="0.93802171945571899" green="0.88784211874008179" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1930,7 +1927,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-KS-s5z" customClass="BorderView" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="192" y="883" width="204" height="24"/>
+                                                <rect key="frame" x="192" y="883.33333333333337" width="204" height="24"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2l-af-FiD" customClass="DLRadioButton">
                                                         <rect key="frame" x="32.666666666666657" y="2" width="20" height="20"/>
@@ -2041,7 +2038,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlS-kD-872">
-                                                <rect key="frame" x="202" y="922" width="10" height="30"/>
+                                                <rect key="frame" x="202" y="922.33333333333337" width="10" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="B5d-AN-oVT"/>
                                                     <constraint firstAttribute="width" constant="10" id="xUQ-mm-KfG"/>
@@ -2051,7 +2048,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSw-ii-4wc" customClass="RoundButton" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="212" y="922" width="100" height="30"/>
+                                                <rect key="frame" x="212" y="922.33333333333337" width="100" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="Equ-hS-Kxo"/>
@@ -2076,7 +2073,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls9-KT-oxw" customClass="RoundButton" customModule="cbe" customModuleProvider="target">
-                                                <rect key="frame" x="102" y="922" width="100" height="30"/>
+                                                <rect key="frame" x="102" y="922.33333333333337" width="100" height="30"/>
                                                 <color key="backgroundColor" red="0.74861653650000004" green="0.2836914062" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                 <state key="normal" title="Cancel">
@@ -2204,14 +2201,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="holder" width="547" height="550"/>
+        <image name="logo" width="100" height="100"/>
         <image name="menu" width="50" height="50"/>
         <image name="plus" width="25" height="25"/>
         <image name="profile" width="50" height="50"/>
+        <image name="search" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="J6F-9Z-Xcl"/>
         <segue reference="TIG-Lg-mMx"/>
-        <segue reference="l9o-hv-uWW"/>
+        <segue reference="Soy-3h-1nW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -48,14 +48,10 @@ class MainViewController: UIViewController, GMSMapViewDelegate {
                                 hear: dictionary[Path.hear] as! [AnyObject],
                                 feel: dictionary[Path.feel] as! [AnyObject])
             self.reports.append(report)
-            
+            let desc = dictionary[Path.description] as! String
             let lat: Double = report.lat
             let lng: Double = report.lng
-            self.locateOnMapWith(lng: lng, lat: lat, title: report.reverseGeocodeCoordinate())
-//            let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: lat, longitude: lng))
-//            marker.title = report.reverseGeocodeCoordinate()
-//            print(report.reverseGeocodeCoordinate())
-//            marker.snippet = "latitude: \(lat) longitude: \(lng)"
+            self.locateOnMapWith(lng: lng, lat: lat, desc: desc)
         })
         let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lng, zoom: 10)
         mapView.camera = camera
@@ -72,10 +68,10 @@ class MainViewController: UIViewController, GMSMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func locateOnMapWith(lng: Double, lat: Double, title: String) {
+    func locateOnMapWith(lng: Double, lat: Double, desc: String) {
         let position = CLLocationCoordinate2DMake(lat, lng)
         let marker = GMSMarker(position: position)
-        marker.title = title
+        marker.title = desc
         marker.infoWindowAnchor = CGPoint(x: 0.5, y: 0.5)
         marker.icon = GMSMarker.markerImage(with: UIColor.green)
         marker.map = self.mapView

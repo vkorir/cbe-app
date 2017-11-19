@@ -8,6 +8,7 @@
 
 import Foundation
 import GoogleMaps
+import GooglePlaces
 
 class Report {
     var id: String                      // uid of the user who posted
